@@ -1,2 +1,2 @@
 # Twitch-m3u-php
-Generates m3u-file using twitch API
+The script generates m3u-file using twitch API.
