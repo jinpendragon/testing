@@ -1,4 +1,15 @@
 <?php
+
+// The script generates m3u-playlist using Twitch API.
+// Tested on webos 3.0 + SS IPTV application
+
+// There are 4 pages:
+// 1. Main page (page = empty) - contains 3 fast folders: Twitch Following, Twitch Games, Hearthstone.
+// 2. Games - shows all current played games. Most popular first.
+// 3. Game - shows streams by game. Sorted by viewers descending.
+// 4. MyTwitch - shows followed channels.
+// 5. Stream - returns m3u8 file which contains source-quality stream.
+
 $page = $_GET["page"];
 if (empty($page)) 
 {
