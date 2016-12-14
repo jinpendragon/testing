@@ -6,9 +6,12 @@
 // There are 4 pages:
 // 1. Main page (param 'page' = empty) - contains 3 fast folders: Twitch Following, Twitch Games, Hearthstone.
 // 2. Games - shows all current played games. Most popular first.
-// 3. Game - shows streams by game. Sorted by viewers descending.
+// 3. Game - shows list of streams sorted by viewers descending.
+// 	&g - game name.
 // 4. MyTwitch - shows followed channels.
+// 	&user - your twitch login.
 // 5. Stream - returns m3u8 file which contains source-quality stream.
+// 	&s - streamer name.
 
 $page = $_GET["page"];
 if (empty($page)) 
